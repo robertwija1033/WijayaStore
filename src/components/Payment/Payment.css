@@ -1,0 +1,136 @@
+body {
+  overflow-x: hidden;
+}
+
+.container-payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* 0a1b69 */
+/* 0afdc6 */
+.card-payment {
+  background-color: #0a1b69;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.card-image {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 120%;
+  position: absolute;
+  transform: translateY(-30px) translateX(-150%) skew(10deg);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-image h5 {
+  padding: 5px;
+  background-color: #0a1b69;
+  border-radius: 5px;
+  color: white;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.payment-details {
+  width: 100%;
+  padding: 10px 10px 10px 95px;
+  /* text-align: center; */
+  background: linear-gradient(to left, #0a1b69, white);
+}
+
+.payment-details {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.payment-pay {
+  padding: 15px 0 0;
+  width: 80%;
+}
+
+.card-number {
+  padding: 0 0 5px 0;
+}
+
+.card-number p,
+.cardholder p,
+.security p {
+  color: white;
+}
+
+.number-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.number-input input {
+  width: 80px;
+  height: 30px;
+}
+
+input,
+.holder-input input {
+  margin-right: 5px;
+}
+
+.number-input input,
+.holder-input input,
+.secure-input input {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: 1px solid #0afdc6;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: white;
+  margin-right: 5px;
+}
+
+.holder-input input,
+.secure-input input {
+  width: 335px;
+  height: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.button button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #0a1b69, #0afdc6);
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin: 10px 50px 0 0;
+}
+
+.button button:hover {
+  background: white;
+  color: #0a1b69;
+}
